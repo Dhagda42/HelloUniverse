@@ -4,7 +4,7 @@ public class Main {
         int nbPlanetes = 8;
         System.out.println(phrase + nbPlanetes);
         phrase = ("Il y a quelques années cependant, elles étaient au nombre de : ");
-        nbPlanetes = 9;
+        nbPlanetes++;
         System.out.println(phrase + nbPlanetes);
     }
 }
