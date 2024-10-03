@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        String phrase = ("Aux dernières nouvelles, le nombre total de planètes dans le système solaire est de : ");
+        int annee = 2006;
         int nbPlanetes = 8;
-        System.out.println(phrase + nbPlanetes);
-        phrase = ("Il y a quelques années cependant, elles étaient au nombre de : ");
-        nbPlanetes++;
-        System.out.println(phrase + nbPlanetes);
+
+        if (annee < 2006){
+            nbPlanetes = 9;
+        }
+        else{
+            nbPlanetes = 8;
+        }
+        System.out.printf("En %d, le nombre de planète est de %d", annee, nbPlanetes);
     }
 }
