@@ -1,26 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        int annee = 2024;
         int nbPlanetes = 8;
 
-        if (annee < 1600 || annee > 2024){
-            System.out.println("Le programme ne peut pas fournir de résultat pour l'année" +annee);
+        switch (nbPlanetes){
+            case 7:
+                System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
+                break;
+
+            case 8:
+                System.out.println("On sait que le nombre de planètes est passé de 7 à 8 au 17ème siècle, mais il a également été réduit de 9 à 8 en 2006");
+                break;
+
+            case 9:
+                System.out.println("On sait que le nombre de planètes est passé de 8 à 9 au 18ème siècle et ce jusqu'en 2006, où ce nombre a été réduit à 8");
+                break;
+
+            default:
+                System.out.printf("Le programme ne peut pas fournir de résultat pour %d", nbPlanetes);
         }
-        else {
-            if (annee < 1781){
-                nbPlanetes = 7;
-            }
-            else if (annee < 1846){
-                nbPlanetes = 8;
-            }
-            else if (annee < 2006){
-                nbPlanetes = 9;
-            }
-            else{
-                nbPlanetes = 8;
-            }
-        }
-        System.out.printf("Le nombre de planètes dans le système solaire en %d est de %d", annee, nbPlanetes);
 
     }
 }
