@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
+        int nbPlanetes = 7;
 
-        for (int nbPlanetes = 7; nbPlanetes < 10; nbPlanetes++)
+        while (nbPlanetes < 10) {
 
-            switch (nbPlanetes){
+            switch (nbPlanetes) {
                 case 7:
                     System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
                     break;
@@ -18,7 +19,10 @@ public class Main {
 
                 default:
                     System.out.printf("Le programme ne peut pas fournir de résultat pour %d", nbPlanetes);
-        }
 
+            }
+            nbPlanetes++;
+
+        }
     }
 }
