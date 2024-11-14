@@ -1,28 +1,52 @@
 public class Main {
     public static void main(String[] args) {
-        int nbPlanetes = 7;
 
-        while (nbPlanetes < 10) {
+        Planete mercure = new Planete();
+            mercure.nom = "Mercure";
+            mercure.matiere = "Tellurique";
+            mercure.diametre = 4880;
 
-            switch (nbPlanetes) {
-                case 7:
-                    System.out.println("On sait qu'au 16ème siècle, seules 7 planètes avaient été découvertes");
-                    break;
+        Planete venus = new Planete();
+            venus.nom = "Vénus";
+            venus.matiere = "Tellurique";
+            venus.diametre = 12100;
 
-                case 8:
-                    System.out.println("On sait que le nombre de planètes est passé de 7 à 8 au 17ème siècle, mais il a également été réduit de 9 à 8 en 2006");
-                    break;
+        Planete terre = new Planete();
+            terre.nom = "Terre";
+            terre.matiere = "Tellurique";
+            terre.diametre = 12756;
 
-                case 9:
-                    System.out.println("On sait que le nombre de planètes est passé de 8 à 9 au 18ème siècle et ce jusqu'en 2006, où ce nombre a été réduit à 8");
-                    break;
+        Planete mars = new Planete();
+            mars.nom = "Mars";
+            mars.matiere = "Tellurique";
+            mars.diametre = 6792;
 
-                default:
-                    System.out.printf("Le programme ne peut pas fournir de résultat pour %d", nbPlanetes);
+        Planete jupiter = new Planete();
+            jupiter.nom = "Jupiter";
+            jupiter.matiere = "Gazeuse";
+            jupiter.diametre = 142984;
 
-            }
-            nbPlanetes++;
+        Planete saturne = new Planete();
+            saturne.nom = "Saturne";
+            saturne.matiere = "Gazeuse";
+            saturne.diametre = 120536;
+
+        Planete uranus = new Planete();
+            uranus.nom = "Uranus";
+            uranus.matiere = "Gazeuse";
+            uranus.diametre = 51118;
+
+        Planete neptune = new Planete();
+            neptune.nom = "Neptune";
+            neptune.matiere = "Gazeuse";
+            neptune.diametre = 49532;
+
+        Planete pluton = new Planete();
+            pluton.nom = "Pluton";
+            pluton.matiere = "Tellurique";
+            pluton.diametre = 2300;
+
+        System.out.println(jupiter.nom+" est une planète "+jupiter.matiere+" avec un diamètre de "+jupiter.diametre+" kilomètres");
 
         }
     }
-}
