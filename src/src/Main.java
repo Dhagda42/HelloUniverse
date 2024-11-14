@@ -51,5 +51,8 @@ public class Main {
         System.out.println(jupiter.nom+" est une planète "+jupiter.matiere+" avec un diamètre de "+jupiter.diametre+" kilomètres");
         System.out.println(X.nom+" est une planète "+X.matiere+" avec un diamètre de "+X.diametre+" kilomètres");
 
+        neptune.revolution();
+        mars.rotation();
+
         }
     }
