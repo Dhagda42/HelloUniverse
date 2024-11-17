@@ -51,8 +51,11 @@ public class Main {
         System.out.println(jupiter.nom+" est une planète "+jupiter.matiere+" avec un diamètre de "+jupiter.diametre+" kilomètres");
         System.out.println(X.nom+" est une planète "+X.matiere+" avec un diamètre de "+X.diametre+" kilomètres");
 
-        neptune.revolution();
-        mars.rotation();
-
+        int nbTours = neptune.revolution(-3542);
+        System.out.println(neptune.nom+" a effectué "+nbTours+" tours complets autour de son étoile.");
+        nbTours = mars.rotation(-684);
+        System.out.println(mars.nom+" a effectué "+nbTours+" tours sur elle-même.");
+        nbTours = venus.rotation(1250);
+        System.out.println(venus.nom+" tourne sur elle-même de "+nbTours+" tours");
         }
     }
