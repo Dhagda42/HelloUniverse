@@ -57,5 +57,10 @@ public class Main {
         System.out.println(mars.nom+" a effectué "+nbTours+" tours sur elle-même.");
         nbTours = venus.rotation(1250);
         System.out.println(venus.nom+" tourne sur elle-même de "+nbTours+" tours");
+
+        mars.accueillirVaisseau(8);
+        mars.accueillirVaisseau("FREGATE");
+
+        System.out.println("Le nombre d'humains ayant déjà séjourné sur Mars est actuellement de "+mars.totalVisiteurs+".");
         }
     }
