@@ -5,7 +5,7 @@ public class Main {
             mercure.nom = "Mercure";
             mercure.matiere = "Tellurique";
             mercure.diametre = 4880;
-
+            
         Planete venus = new Planete();
             venus.nom = "Vénus";
             venus.matiere = "Tellurique";
@@ -35,6 +35,11 @@ public class Main {
             uranus.nom = "Uranus";
             uranus.matiere = "Gazeuse";
             uranus.diametre = 51118;
+            Atmosphere atmosphereUranus = new Atmosphere();
+                atmosphereUranus.tauxHydrogene = 83f;
+                atmosphereUranus.tauxHelium = 15f;
+                atmosphereUranus.tauxMethane = 2.5f;
+            uranus.atmosphere = atmosphereUranus;
 
         Planete neptune = new Planete();
             neptune.nom = "Neptune";
@@ -62,5 +67,7 @@ public class Main {
         mars.accueillirVaisseau("FREGATE");
 
         System.out.println("Le nombre d'humains ayant déjà séjourné sur Mars est actuellement de "+mars.totalVisiteurs+".");
+        System.out.println("Uranus est composée : A "+uranus.atmosphere.tauxHydrogene+" d'hydrogène, à "
+                +uranus.atmosphere.tauxHelium+" d'hélium, à "+uranus.atmosphere.tauxMethane+" de méthane");
         }
     }
