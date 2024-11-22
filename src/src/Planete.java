@@ -20,21 +20,14 @@ public class Planete {
     }
 
     void accueillirVaisseau(String typeVaisseau){
-        switch (typeVaisseau){
-            case "CHASSEUR":
-                totalVisiteurs = totalVisiteurs += 3;
-                break;
-
-            case "FREGATE":
-                totalVisiteurs = totalVisiteurs += 12;
-                break;
-
-            case "CROISEUR":
-                totalVisiteurs = totalVisiteurs += 50;
-                break;
-
-            default:
-                System.out.println("La valeur saisie n'est pas correcte.");
-        }
+        if (typeVaisseau.equals("CHASSEUR")){
+            totalVisiteurs = totalVisiteurs + 3;
+        } else if (typeVaisseau.equals("FREGATE")) {
+            totalVisiteurs = totalVisiteurs + 12;
+        } else if (typeVaisseau.equals("CROISEUR")) {
+            totalVisiteurs = totalVisiteurs + 3;
+        }else {
+            System.out.println("La valeur saisie n'est pas valide");
+    }
     }
 }
